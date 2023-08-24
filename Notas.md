@@ -1,6 +1,8 @@
 # JAVA (POO)
   - [Conceitos](#conceitos)
   - [Encapsulamento](#encapsulamento)
+  - [Agregação](#agregação)
+  - [Associação](#associação)
 
 
 Aula do dia 17/08/2023
