@@ -18,7 +18,8 @@ uma	 classe	,	 além	 de	 esconder	 como	funcionam	 as	 rotinas	 (no	 caso	méto
 nosso	sistema.
 
 * Quando se insere uma variável, o java procura primeiro localmente e depois globalmente
-* É interessante o getters/setters serem públicos 
+* É interessante o getters/setters serem públicos
+* Alt + insert ->  Criação dos getters e setters
 
 # Agregação
 
@@ -38,3 +39,23 @@ Obs: Não deixa de ser uma associação
 # Associação
 
 A associação entre dois objetos ocorre quando eles são completamente independentes entre si mas eventualmente estão relacionados.
+
+# Construtores
+
+Quando	usamos	a	palavra	chave		new	,	estamos	construindo	um	objeto.	Sempre	quando	o		new		 é
+chamado,	ele	executa	o	construtor	da	classe.	O	construtor	da	classe	é	um	bloco	declarado	com	o mesmo
+nome	que	a	classe
+
+    class Conta	{
+				String	titular;
+				int	numero;
+				double	saldo;
+				//	construtor
+				Conta()	{
+						System.out.println("Construindo	uma	conta.");
+				}
+    }
+Então,	quando	fizermos:
+Conta	c	=	new	Conta();
+A	mensagem	"construindo	uma	conta"	aparecerá.	É	como	uma	rotina	de	inicialização	que	é	chamada
+sempre	que	um	novo	objeto	é	criado.	Um	construtor	pode	parecer,	mas	não	é	um	método.
