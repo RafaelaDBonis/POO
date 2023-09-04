@@ -52,10 +52,32 @@ nome	que	a	classe
 				double	saldo;
 				//	construtor
 				Conta()	{
-						System.out.println("Construindo	uma	conta.");
+						System.out.println("Construindo	uma conta.");
 				}
     }
 Então,	quando	fizermos:
 Conta	c	=	new	Conta();
 A	mensagem	"construindo	uma	conta"	aparecerá.	É	como	uma	rotina	de	inicialização	que	é	chamada
 sempre	que	um	novo	objeto	é	criado.	Um	construtor	pode	parecer,	mas	não	é	um	método.
+
+# Collections
+
+Estrutura de dados = armazena dados correlatos
+
+A API de Collections traz a interface java.util.List , que especifica o que uma classe deve ser
+capaz de fazer para ser uma lista
+
+- List:
+  - Acesso via índice
+  - Ordem de entrada é igual a ordem de saída
+  - Pode ter itens duplicados
+
+Para criar uma lista, chame o construtor:  `ArrayList lista = new ArrayList();`
+
+Para saber quantos elementos há na lista, usamos o método `size()` e o `get(int)` que recebe como argumento o índice do elemento que se quer
+recuperar :
+```
+for(int i = 0; i < lista.size(); i++){
+            System.out.println("Nome:[" + i + "]:" + lista.get(i));
+        }
+
