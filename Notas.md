@@ -30,11 +30,14 @@ Obs: Não deixa de ser uma associação
 ````
 
 
+Pilha = variáveis
+Heap = conteúdo
 
-| Pilha          | Hear |
+| Pilha          | Heap |
 | -------------  | ------------- |
 | F1             | Classe Func  |
 | Filho          | Classe Filho  |
+
 
 # Associação
 
@@ -80,4 +83,8 @@ recuperar :
 for(int i = 0; i < lista.size(); i++){
             System.out.println("Nome:[" + i + "]:" + lista.get(i));
         }
+```
 
+* *ForEach*
+
+"for-each" (ou "enhanced for loop" em inglês) e é uma maneira simplificada de percorrer coleções de objetos em Java, como arrays e listas.
