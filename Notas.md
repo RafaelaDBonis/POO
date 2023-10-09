@@ -3,6 +3,7 @@
   - [Encapsulamento](#encapsulamento)
   - [Agregação](#agregação)
   - [Associação](#associação)
+  - [Interface gráfica](#interface-grafica)
 
 
 Aula do dia 17/08/2023
@@ -88,3 +89,14 @@ for(int i = 0; i < lista.size(); i++){
 * *ForEach*
 
 "for-each" (ou "enhanced for loop" em inglês) e é uma maneira simplificada de percorrer coleções de objetos em Java, como arrays e listas.
+
+# Interface gráfica
+
+*Criar projeto em FXML JavaFX Maven Archtype (Gluon)*
+
+- FXML - tela
+- CSS - estilos
+- Controller - Gerenciamento
+	- Os eventos que ocorrem dentro da tela (FXML) é gerenciado pelo controller
+
+ Para renomear a classe App mude a linha 39 do pom.xml em project files
