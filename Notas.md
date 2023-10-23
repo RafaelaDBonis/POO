@@ -100,3 +100,17 @@ for(int i = 0; i < lista.size(); i++){
 	- Os eventos que ocorrem dentro da tela (FXML) é gerenciado pelo controller
 
  Para renomear a classe App mude a linha 39 do pom.xml em project files
+
+ *Para limpar os textField e os radioButton*
+
+ ```java
+	//Limpar os TextFields
+        txtNumero1.setText("");
+        txtNumero2.setText("");
+        txtResultado.setText("");
+        
+        //limpar todos os radioButton
+        tgOperacao.selectToggle(null);
+        
+        //enviar o foco para txtNumero1
+        txtNumero1.requestFocus();
