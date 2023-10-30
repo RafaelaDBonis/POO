@@ -101,7 +101,7 @@ for(int i = 0; i < lista.size(); i++){
 
  Para renomear a classe App mude a linha 39 do pom.xml em project files
 
- *Para limpar os textField e os radioButton*
+- *Para limpar os textField e os radioButton*
 
  ```java
 	//Limpar os TextFields
@@ -114,3 +114,25 @@ for(int i = 0; i < lista.size(); i++){
         
         //enviar o foco para txtNumero1
         txtNumero1.requestFocus();
+```
+
+- *Exibir dados (button)
+```java
+@FXML
+    private void btnExibirDados_Click(ActionEvent event) {
+        //verifica se tem algo selecionado e exibe msg
+        
+        //getValue -> DEVOLVE O ELEMENTO SELECIONADO E SE N TIVER NADA == NULL
+        if(cbProduto.getValue() == null){
+            mensagem("Selecione um item...");
+        }
+        else{
+            //pega dados da combo
+            modelProduto = cbProduto.getValue();
+            
+            //exibe
+            moveModelToView(modelProduto);
+        }
+    }
+```
+  
